@@ -13,6 +13,7 @@ include ohmyzsh
 ## Required Puppet Modules
 
 * `boxen`
+* `zsh`
 
 ## Development
 
