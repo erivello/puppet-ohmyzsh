@@ -1,7 +1,8 @@
 # This is a placeholder class.
 class ohmyzsh {
 
-  $curl = 'curl -L http://install.ohmyz.sh'
+  $url = 'https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh'
+  $curl = "curl -L ${url}"
   $sh = 'sh'
   $home = "/Users/${::boxen_user}"
 
