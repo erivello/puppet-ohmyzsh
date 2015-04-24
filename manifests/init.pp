@@ -7,6 +7,6 @@ class ohmyzsh {
 
   exec { 'install oh-my-zsh':
     command => "${curl} | ${sh}",
-    onlyif  => "test ! -d ${home}/.oh-my-zsh",
+    creates => "${home}/.oh-my-zsh",
   }
 }
