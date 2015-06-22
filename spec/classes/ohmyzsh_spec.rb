@@ -8,7 +8,7 @@ describe 'ohmyzsh' do
   it do
     should contain_exec('install oh-my-zsh').with({
       :command => 'curl -L http://install.ohmyz.sh | sh',
-      :onlyif => "test ! -d /Users/boxen_user/.oh-my-zsh",
+      :creates => '/Users/boxen_user/.oh-my-zsh',
     })
   end
 end
