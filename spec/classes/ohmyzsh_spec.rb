@@ -7,7 +7,7 @@ describe 'ohmyzsh' do
   it { should contain_class('ohmyzsh') }
   it do
     should contain_exec('install oh-my-zsh').with({
-      :command => 'curl -L http://install.ohmyz.sh | sh',
+      :command => 'curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh',
       :creates => '/Users/boxen_user/.oh-my-zsh',
     })
   end
